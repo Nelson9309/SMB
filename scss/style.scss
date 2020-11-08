@@ -207,6 +207,9 @@
 				max-height: 100vh;
 
 			}
+			40%{
+				opacity: 0;
+			}
 			100%{
 				pointer-events: none;
 				padding-top: 0;

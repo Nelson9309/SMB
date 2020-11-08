@@ -4,7 +4,6 @@
  	slidesPerGroup: 4,
  	pagination: {
  		el: '.swiper-pagination',
- 		clickable: true,
  	},
  });
 
@@ -22,10 +21,10 @@
 //menu
 
 
-// document.querySelector('.header__menu-res').addEventListener('click', function() {
-// 	document.querySelector('.menu-dropdownres').classList.remove('hide');
-// 	document.querySelector('.menu-dropdownres').classList.toggle('active');
-// });
+document.querySelector('.header__menu-res').addEventListener('click', function() {
+	document.querySelector('.menu-dropdownres').classList.remove('hide');
+	document.querySelector('.menu-dropdownres').classList.toggle('active');
+});
 
 // //header fixed anim
 // const header = document.querySelector('.header');
