@@ -16,16 +16,26 @@ function offset(el) {
 //menu
 
 
-var closeIcon = document.querySelectorAll('.header__menu-res'); 
-function closeBigImgAndContainer(e)
+var btnres = document.querySelectorAll('.header__menu-res');
+var dropres = document.querySelector('.menu-dropdownres');
+
+function closeBigImgAndContainerA(e)
 {
-    document.querySelector('.menu-dropdownres').classList.remove('hide');
-	document.querySelector('.menu-dropdownres').classList.toggle('active');
+    dropres.classList.remove('hide');
+	dropres.classList.add('active');
 };
 
-for (var i = 0; i < closeIcon.length; i++) {
-   closeIcon[i].addEventListener('click', closeBigImgAndContainer); 
+for (var i = 0; i < btnres.length; i++) {
+   btnres[i].addEventListener('mouseenter', closeBigImgAndContainerA); 
 }
+
+document.querySelector('.menu-dropdownres').addEventListener('mouseover', function(){
+	dropres.classList.add('active');
+});
+document.querySelector('.menu-dropdownres').addEventListener('mouseout', function(){
+	dropres.classList.remove('active');
+});
+
 
 
 // //header fixed anim

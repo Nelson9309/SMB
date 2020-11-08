@@ -100,7 +100,9 @@
 		position: relative;
 		&.active{
 			font-weight: bold;
-			border-color: #fff;
+			&::after{
+				width: 100%;
+			}
 		}
 		img{
 			margin-left: 15px;
