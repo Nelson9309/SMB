@@ -8,31 +8,39 @@
  	},
  });
 
-
-//menu
-
-
-document.querySelector('.header__menu-res').addEventListener('click', function() {
-	document.querySelector('.menu-dropdownres').classList.remove('hide');
-	document.querySelector('.menu-dropdownres').classList.toggle('active');
-});
-
-// //header fixed anim
-// const header = document.querySelector('.header');
-
-// window.addEventListener('scroll', function() {
-
-// 	if (getBoundingClientRect(100).top;) {
-// 		document.querySelector('.header-hide').classList.toggle('active');
-// 	} else {
-
-// 	}
-// });
 function offset(el) {
 	var rect = el.getBoundingClientRect(),
 	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	return { top: rect.top + scrollTop }
 }
+//menu
+
+
+var closeIcon = document.querySelectorAll('.header__menu-res'); 
+function closeBigImgAndContainer(e)
+{
+    document.querySelector('.menu-dropdownres').classList.remove('hide');
+	document.querySelector('.menu-dropdownres').classList.toggle('active');
+};
+
+for (var i = 0; i < closeIcon.length; i++) {
+   closeIcon[i].addEventListener('click', closeBigImgAndContainer); 
+}
+
+
+// //header fixed anim
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+
+	if (window.pageYOffset >= 170) {
+		document.querySelector('.header-hide').classList.add('active');
+	} else {
+		document.querySelector('.header-hide').classList.remove('active');
+
+	}
+});
+
 
 //ПАРАЛАКС 1
 

@@ -2,9 +2,27 @@
 @import 'vars';
 @import 'global';
 .header-hide{
-	display: none;
+	position: fixed;
+	top: 0;	left: 0;
+	width: 100%;
+	transform: translateY(-120%);
+	pointer-events: none;
+	z-index: 16;
+	transition: all .3s;
+	background-color: #414141;
+	color: #fff;
 	&.active{
-		display: block;
+		pointer-events: visible;
+		transform: translateY(0);
+	}
+	&__inner{
+		display: flex;	
+		align-items: center;	
+		justify-content: space-between;
+	}
+	.social{
+		display: flex;
+		align-items: center;
 	}
 }
 .header{
@@ -196,10 +214,15 @@
 		border-radius: 0px 0px 10px 10px;
 		z-index: 14;
 		overflow-y: auto;
+		&::-webkit-scrollbar {
+			width: 0px;
+			background: transparent;
+			-ms-overflow-style: none;
+			overflow: -moz-scrollbars-none;
+		}
 		padding-top: 0;
 		color: #fff;
 		animation: .6s menuhide forwards;
-
 		@keyframes menuhide {
 			0%{
 				pointer-events: visible;
@@ -241,12 +264,6 @@
 					max-height: 100vh;
 				}
 			}
-		}
-		&::-webkit-scrollbar {
-			width: 0px;
-			background: transparent;
-			-ms-overflow-style: none;
-			overflow: -moz-scrollbars-none;
 		}
 	}
 	&-dropdown__items{
