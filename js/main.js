@@ -4,6 +4,7 @@
  	slidesPerGroup: 4,
  	pagination: {
  		el: '.swiper-pagination',
+ 		clickable: true,
  	},
  });
 
@@ -14,34 +15,34 @@
 
 
 
-function offset(el) {
-	var rect = el.getBoundingClientRect(),
-	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	return { top: rect.top + scrollTop }
-}
+
 
 
 
 //menu
 
 
-document.querySelector('.header__menu-res').addEventListener('click', function() {
-	document.querySelector('.menu-dropdownres').classList.remove('hide');
-	document.querySelector('.menu-dropdownres').classList.toggle('active');
-});
+// document.querySelector('.header__menu-res').addEventListener('click', function() {
+// 	document.querySelector('.menu-dropdownres').classList.remove('hide');
+// 	document.querySelector('.menu-dropdownres').classList.toggle('active');
+// });
 
-//header fixed anim
-const header = document.querySelector('.header');
+// //header fixed anim
+// const header = document.querySelector('.header');
 
-window.addEventListener('scroll', function() {
+// window.addEventListener('scroll', function() {
 
-	if (getBoundingClientRect(100).top;) {
-		document.querySelector('.header-hide').classList.toggle('active');
-	} else {
+// 	if (getBoundingClientRect(100).top;) {
+// 		document.querySelector('.header-hide').classList.toggle('active');
+// 	} else {
 
-	}
-});
-
+// 	}
+// });
+function offset(el) {
+	var rect = el.getBoundingClientRect(),
+	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	return { top: rect.top + scrollTop }
+}
 
 //ПАРАЛАКС 1
 
