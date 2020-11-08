@@ -195,13 +195,11 @@
 		backdrop-filter: blur(60px);
 		border-radius: 0px 0px 10px 10px;
 		z-index: 14;
+		overflow-y: auto;
 		padding-top: 0;
 		color: #fff;
 		animation: .6s menuhide forwards;
-		&__inner{
-			overflow-y: auto;
-			height: 100vh;	
-		}
+
 		@keyframes menuhide {
 			0%{
 				pointer-events: visible;
@@ -266,6 +264,7 @@
 		display: flex;
 		align-items: stretch;
 		justify-content: space-between;
+		min-height: 100%;
 	}
 	&-dropdown__block{
 		padding: 25px 35px 25px 40px;
