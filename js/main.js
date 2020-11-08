@@ -4,6 +4,7 @@
  	slidesPerGroup: 4,
  	pagination: {
  		el: '.swiper-pagination',
+ 		clickable: true,
  	},
  });
 
