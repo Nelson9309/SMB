@@ -684,55 +684,10 @@
 
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			var swiper = new Swiper(".swiper-container", {
-				slidesPerView: 4,
-				spaceBetween: 30,
-				slidesPerGroup: 4,
-				loop: 0,
-				autoplay: 0,
-				breakpoints: {
-					320: {
-						slidesPerView: 1,
-						spaceBetween: 10,
-						slidesPerGroup: 1,
-					},
-					768: {
-						slidesPerView: 3,
-						spaceBetween: 30,
-						slidesPerGroup: 3,
-					},
-					1260: {
-						slidesPerView: 4,
-						spaceBetween: 20,
-						slidesPerGroup: 4,
-					},
-				},
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: 0,
-				}
-			});
-		</script>
-		<script>let didScroll=!1,paralaxTitles=document.querySelectorAll(".header-paralax");const scrollInProgress=()=>{didScroll=!0},raf=()=>{didScroll&&(paralaxTitles.forEach((r,e)=>{r.style.transform="translateY(-"+window.scrollY/30+"%)"}),didScroll=!1),requestAnimationFrame(raf)};function offset(r){var e=r.getBoundingClientRect(),l=window.pageYOffset||document.documentElement.scrollTop;return{top:e.top+l}}requestAnimationFrame(raf),window.addEventListener("scroll",scrollInProgress);let didScrollA=!1,paralaxTitlesA=document.querySelectorAll(".decision-paralax");var div=document.querySelector(".decision"),divOffset=offset(div).top;const scrollInProgressA=()=>{didScrollA=!0},rafA=()=>{didScrollA&&(paralaxTitlesA.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffset+700)/15+"%)"}),didScrollA=!1),requestAnimationFrame(rafA)};requestAnimationFrame(rafA),window.addEventListener("scroll",scrollInProgressA);let didScrollB=!1,paralaxTitlesB=document.querySelectorAll(".question-paralax");var divB=document.querySelector(".question"),divOffsetB=offset(divB).top;const scrollInProgressB=()=>{didScrollB=!0},rafB=()=>{didScrollB&&(paralaxTitlesB.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffsetB+700)/40+"%)"}),didScrollB=!1),requestAnimationFrame(rafB)};requestAnimationFrame(rafB),window.addEventListener("scroll",scrollInProgressB);</script>
+		<script>var swiper=new Swiper(".swiper-container",{slidesPerView:4,spaceBetween:30,slidesPerGroup:4,loop:0,autoplay:0,breakpoints:{320:{slidesPerView:1,spaceBetween:10,slidesPerGroup:1},768:{slidesPerView:3,spaceBetween:30,slidesPerGroup:3},1260:{slidesPerView:4,spaceBetween:20,slidesPerGroup:4}},pagination:{el:".swiper-pagination",clickable:0}});let didScroll=!1,paralaxTitles=document.querySelectorAll(".header-paralax");const scrollInProgress=()=>{didScroll=!0},raf=()=>{didScroll&&(paralaxTitles.forEach((r,e)=>{r.style.transform="translateY(-"+window.scrollY/30+"%)"}),didScroll=!1),requestAnimationFrame(raf)};function offset(r){var e=r.getBoundingClientRect(),l=window.pageYOffset||document.documentElement.scrollTop;return{top:e.top+l}}requestAnimationFrame(raf),window.addEventListener("scroll",scrollInProgress);let didScrollA=!1,paralaxTitlesA=document.querySelectorAll(".decision-paralax");var div=document.querySelector(".decision"),divOffset=offset(div).top;const scrollInProgressA=()=>{didScrollA=!0},rafA=()=>{didScrollA&&(paralaxTitlesA.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffset+700)/15+"%)"}),didScrollA=!1),requestAnimationFrame(rafA)};requestAnimationFrame(rafA),window.addEventListener("scroll",scrollInProgressA);let didScrollB=!1,paralaxTitlesB=document.querySelectorAll(".question-paralax");var divB=document.querySelector(".question"),divOffsetB=offset(divB).top;const scrollInProgressB=()=>{didScrollB=!0},rafB=()=>{didScrollB&&(paralaxTitlesB.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffsetB+700)/40+"%)"}),didScrollB=!1),requestAnimationFrame(rafB)};requestAnimationFrame(rafB),window.addEventListener("scroll",scrollInProgressB);</script>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script>
-			$(function(){
-				$('.header__menu-res, .header-dropdown__inner').on('mouseover', function(){
-					$('.header-dropdown').removeClass('hide');
-					$('.header-dropdown').addClass('active');
-				});
-				$('.header__menu-other').on('mouseover', function(){
-					$('.header-dropdown').removeClass('active');
-				});
-				$('.header-dropdown').on('mouseleave', function(){
-					$('.header-dropdown').removeClass('active');
-				});
-				$('.scroll').click(function(){
-					$('html, body').animate({scrollTop:0}, 'slow');
-					return false;
-				});
-			});
+			$(function(){$(".header__menu-res, .header-dropdown__inner").on("mouseover",function(){$(".header-dropdown").removeClass("hide"),$(".header-dropdown").addClass("active")}),$(".header__menu-other").on("mouseover",function(){$(".header-dropdown").removeClass("active")}),$(".header-dropdown").on("mouseleave",function(){$(".header-dropdown").removeClass("active")}),$(".scroll").click(function(){return $("html, body").animate({scrollTop:0},"slow"),!1})});
 		</script>
 	</body>
 
