@@ -50,6 +50,14 @@
 		background-size: 75%;
 	}
 }
+@media (max-height: 860px){
+	.header-dropdown{
+		height: 100%;
+	}
+	.header-dropdown__blocks{
+		height: 100%;
+	}
+}
 @media (max-width: 1366px) {
 	.main{
 		&::after, &::before{
@@ -58,5 +66,10 @@
 	}
 	.decision {
 		background-size: 135%;
+	}
+}
+@media (max-width: 1200px){
+	body{
+		font-size: 13px;
 	}
 }

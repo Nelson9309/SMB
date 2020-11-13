@@ -19,8 +19,8 @@
 					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
 					<nav class="header__menu">
 						<ul class="header__menu-list">
-							<li class="header__menu-item"><a class="header__menu-link active" href="#">Главная</a></li>
-							<li class="header__menu-item"><a class="header__menu-link header__menu-res" href="#">Решения<img src="images/arrow.svg" alt=""></a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
+							<li class="header__menu-item"><p class="header__menu-link active header__menu-res">Решения<img src="images/arrow.svg" alt=""></p></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</div>
-		<header class="header product-header" style="background-image: url(images/header-all.webp);">
+		<header class="header error-header" style="background-image: url(images/main-bg.webp);">
 			<div class="container">
 				<div class="header__top">
 					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
@@ -79,8 +79,8 @@
 				<div class="header__bottom">
 					<nav class="header__menu">
 						<ul class="header__menu-list">
-							<li class="header__menu-item"><a class="header__menu-link active" href="#">Главная</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Решения<img src="images/arrow.svg" alt=""></a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
+							<li class="header__menu-item"><p class="header__menu-link header__menu-res active">Решения<img src="images/arrow.svg" alt=""></p></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
@@ -204,270 +204,148 @@
 				</div>
 			</div>
 		</nav>
-		<section class="product">
+		<section class="error">
 			<div class="container">
-				<div class="product__inner">
-					<div class="product__slider">
-						<div class="product__slider-container gallery-top">
-							<div class="product-wrapper">
-								<div class="product-slide">
-									<div class="product__slider-itemprev"><img src="images/productslider-img1.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemprev"><img src="images/productslider-img2.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemprev"><img src="images/productslider-img3.webp" alt=""></div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-container gallery-thumbs">
-							<div class="product-wrapper wrapbb">
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img1.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
-								</div>
-							</div>
-						</div>
+				<div class="error__inner">
+					<div class="error__info">
+						<h1 class="error__info-title title-h1">Ошибка 404</h1>
+						<p class="error__info-descr">Что-то пошло не так...</p>
+						<a href="#" class="error__info-link btn">на главную</a>
 					</div>
-					<div class="product__info">
-						<div class="breadcrumbs">
-							<ul class="breadcrumbs__list">
-								<li class="breadcrumbs__list-item">
-									<a href="#">SMB Computers</a>
-								</li>
-								<li class="breadcrumbs__list-item">
-									<a href="#">Решения</a>
-								</li>
-								<li class="breadcrumbs__list-item">
-									<span>По категориям бизнеса</span>
-								</li>
-							</ul>
-						</div>
-						<h1 class="product__title title-h1">Ноутбуки для сотрудников</h1>
-						<div class="product__info-checkout">
-							<a class="product__info-btn btn" href="#">запросить кп</a>
-							<p class="product__info-price price">10 000 ₽</p>
-						</div>
-						<div class="product__info-order product-order">
-							<div class="product-order__items">
-								<a class="product-order__item" href="#">
-									<img src="images/order-1.svg" alt="">
-									<h5 class="product-order__item-title title-h5">На сайте производителя</h5>
-								</a>
-								<a class="product-order__item" href="#">
-									<img src="images/order-2.svg" alt="">
-									<h5 class="product-order__item-title title-h5">Посмотреть на маркете</h5>
-								</a>
-								<a class="product-order__item" href="#">
-									<img src="images/order-3.svg" alt="">
-									<h5 class="product-order__item-title title-h5">Скачать документацию</h5>
-								</a>
-							</div>
-						</div>
-						<div class="product__info-description">
-							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-							</p>
-							<p>
-								Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-							</p>
-						</div>
-						<div class="product__specification">
-							<h3 class="product__specification-title title-h3">Характеристики</h3>
-							<div class="product__specification-table">
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Тип устройства</p>
-									</div>
-									<div class="product__specification-value">
-										<p>ноутбук</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Операционная система</p>
-									</div>
-									<div class="product__specification-value">
-										<p>Chrome OS</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Модель</p>
-									</div>
-									<div class="product__specification-value">
-										<p>HP Chromebook 12b-ca0001ur</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Код производителя</p>
-									</div>
-									<div class="product__specification-value">
-										<p>9ES21EA</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Год релиза</p>
-									</div>
-									<div class="product__specification-value">
-										<p>2020</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Цвет верхней крышки</p>
-									</div>
-									<div class="product__specification-value">
-										<p>серебристый</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>1С Бухгалтерия</p>
-									</div>
-									<div class="product__specification-value">
-										<p>10 000 ₽</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Управление задачами</p>
-									</div>
-									<div class="product__specification-value">
-										<p>10 000 ₽</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Рабочие места</p>
-									</div>
-									<div class="product__specification-value">
-										<p>10 000 ₽</p>
-									</div>
-								</div>
-								<div class="product__specification-tableitem title-h5">
-									<div class="product__specification-option">
-										<p>Хранение файлов</p>
-									</div>
-									<div class="product__specification-value">
-										<p>10 000 ₽</p>
-									</div>
-								</div>
-							</div>
-							<div class="product__specification-video">
-								<iframe src="https://www.youtube.com/embed/Es2pWY2ad3I" allowfullscreen style="border: none;"></iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pr-description"></div>
-			</div>
-		</section>
-		<section class="product-likes">
-			<div class="container">
-				<div class="product-likes__inner">
-					<div class="product-likes__block">
-						<h2 class="product-likes__title title-h2">С этим товаром <span>покупают</span>:</h2>
-						<div class="product-likes__items">
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-						</div>
-					</div>
-					<div class="product-likes__block">
-						<h2 class="product-likes__title title-h2"><span>Похожие</span> товары:</h2>
-						<div class="product-likes__items">
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-							<div class="product-likes__item">
-								<div class="product-likes__item-img">
-									<img src="images/productslider-img1.webp" alt="">
-								</div>
-								<h4 class="product-likes__item-title title-h4">HP Chromebook 12b-ca0001ur</h4>
-								<a href="#" class="product-likes__item-btn btn">Подробнее</a>
-							</div>
-						</div>
-					</div>
+					<img class="error__img" src="images/error.webp" alt="">
 				</div>
 			</div>
 		</section>
-		<section class="work main-work">
+		<section class="solutions error-solutions">
 			<div class="container">
-				<div class="work__inner">
-					<div class="work__main">
-						<img class="work__main-img" src="images/work-img.svg" alt="">
-						<div class="work__main-formwrap form">
-							<form action="#" id="form2" method="POST">
-								<h2 class="work__form-title title-h3">Получить коммерческое предложение</h2>
-								<div class="work__form-inputwrap inputwrap _req"><input class="work__form-input input" name="name" type="text" placeholder="Ваше имя"></div>
-								<div class="work__form-inputwrap inputwrap _req"><input class="work__form-input input" name="email" type="text" placeholder="E-mail"></div>
-								<div class="work__form-inputwrap inputwrap"><input class="work__form-input input" name="tel" type="text" placeholder="Телефон"></div>
-								<div class="work__form-inputwrap inputwrap"><textarea class="work__form-input input" name="ask" placeholder="Вопрос"></textarea></div>
-								<p class="work__form-agree formagree">Нажимая на кнопку “Отправить вопрос”, вы соглашаетесь с политикой обработки <span>Персональных данных</span></p>
-								<label class="work__form-btn formbtn btn">
-									<input type="submit">
-									отправить вопрос
-								</label>
-							</form>
+				<h2 class="solutions__title title-h2"><span>Или выберите интересующее Вас</span> IT-решение:</h2>
+				<div class="solutions__inner">
+					<div class="solutions__block">
+						<h2 class="solutions__block-title title-h2">ИТ-инфраструктура:</h2>
+						<div class="solutions__block-items">
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img1.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Организация удаленной работы</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img2.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Компьютеры для сотрудников</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img3.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Надежное хранение и удаленный доступ</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img4.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Корпоративная WiFi сеть</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img5.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Печать и сканирование</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img6.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Электронная почта</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img7.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Телефония</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img8.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Конференцсвязь</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="solutions__block">
+						<h2 class="solutions__block-title title-h2">Безопасность</h2>
+						<div class="solutions__block-items">
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img9.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Видеонаблюдение</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img10.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Контроль доступа</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="solutions__block">
+						<h2 class="solutions__block-title title-h2">Автоматизация бизнес-процессов</h2>
+						<div class="solutions__block-items">
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img11.svg" alt="">
+									<h4 class="solutions-item__title title-h4">1С Бухгалтерия</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img12.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Управление задачами</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img13.svg" alt="">
+									<h4 class="solutions-item__title title-h4">База клиентов (CRM): </h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img14.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Складской учет</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img15.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Контроль за передвижением</h4>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="solutions__block">
+						<h2 class="solutions__block-title title-h2">Привлечение клиентов из Интернет:</h2>
+						<div class="solutions__block-items">
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img16.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Продающий сайт</h4>
+								</div>
+							</a>
+							<a class="solutions__block-item solutions-item" href="#">
+								<div class="solutions-item__top">
+									<img class="solutions-item__img" src="images/solutions-img17.svg" alt="">
+									<h4 class="solutions-item__title title-h4">Социальные сети</h4>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="work__bg">
-				<img class="work__bg-bluewh" src="images/work-bg1.svg" alt="">
-				<img class="work__bg-blue" src="images/work-bg2.svg" alt="">
 			</div>
 		</section>
 		<footer class="footer" style="background-image: url(images/footer-bg.svg);">
@@ -541,42 +419,12 @@
 			<a class="scroll" href="#top"><img src="images/scroll.svg" alt=""></a>
 		</div>
 
-		<script src="js/swiper-bundle.min.js"></script>
-		<script src="js/main.js"></script>
-		<!-- Слайдер -->
-		<script>
-			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				spaceBetween: 10,
-				freeMode: true,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
-				slidesPerView: 4,
-				wrapperClass: 'product-wrapper',
-				slideClass: 'product-slide',
-			});
-			var galleryTop = new Swiper('.gallery-top', {
-				spaceBetween: 10,
-				wrapperClass: 'product-wrapper',
-				effect: 'fade',
-				autoplay: true,
-				slideClass: 'product-slide',
-				autoplay: {
-					delay: 3000,
-				},
-				thumbs: {
-					swiper: galleryThumbs
-				}
-			});
-		</script>
-		<!-- Паралакс -->
 		<script>
 			let didScroll = false;
 			let paralaxTitles = document.querySelectorAll('.header-paralax');
-
 			const scrollInProgress = () => {
 				didScroll = true
 			}
-
 			const raf = () => {
 				if(didScroll) {
 					paralaxTitles.forEach((element, index) => {
@@ -586,11 +434,11 @@
 				}
 				requestAnimationFrame(raf);
 			}
-
-
 			requestAnimationFrame(raf);
 			window.addEventListener('scroll', scrollInProgress);
 		</script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<!-- Menu -->
 		<script>
@@ -613,6 +461,4 @@
 				});
 			});
 		</script>
-	</body>
-
-	</html>
+		</html>
