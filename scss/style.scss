@@ -1662,10 +1662,13 @@
 			margin-right: 15px;
 		}
 		&:hover{
-			.product__info-item-title{
+			.product-order__item-title{
 				color: #0F91E3;
 			}
 		}
+	}
+	&-order__item-title{
+		transition: all .3s;
 	}
 	&__info-description{
 		margin-bottom: 35px;
