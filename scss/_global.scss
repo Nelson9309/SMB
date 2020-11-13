@@ -237,6 +237,15 @@ body {
 		text-decoration: underline;
 	}
 }
+.mfp-ready .popup{
+	display: block;
+}
+.popup{
+	display: none;
+	.form{
+		margin: 0 auto;
+	}
+}
 .formbtn{
 	position: relative;
 	display: block;
