@@ -213,7 +213,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: calc(100vh - (100vh - 1220px) + 115px);
-		background: rgb(53 53 53 / 95%);
+		background: linear-gradient(to bottom, #414141 18%, #0f91e3 100%);
 		border-radius: 0px 0px 10px 10px;
 		z-index: 14;
 		overflow: hidden;
