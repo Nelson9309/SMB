@@ -8,6 +8,7 @@
 	<title>SMB</title>
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,14 +17,14 @@
 		<div class="header-hide">
 			<div class="container">
 				<div class="header-hide__inner">
-					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
+					<a href="#" class="logo"><img src="images/logo2.svg" alt=""></a>
 					<nav class="header__menu">
 						<ul class="header__menu-list">
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
 							<li class="header__menu-item"><a class="header__menu-link header__menu-res" href="#">Решения<img src="images/arrow.svg" alt=""></a></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
-							<li class="header__menu-item"><a class="header__menu-link active" href="#">Статьи</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
+							<li class="header__menu-item"><a class="header__menu-link active" href="#">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="social">
@@ -43,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<header class="header header-article" style="background-image: url(images/header-all.webp);">
+		<header class="header header-contacts" style="background-image: url(images/header-all.webp);">
 			<div class="container">
 				<div class="header__top">
 					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
@@ -82,11 +83,11 @@
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
 							<li class="header__menu-item"><p class="header__menu-link header__menu-res">Решения<img src="images/arrow.svg" alt=""></p></li>
 							<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
-							<li class="header__menu-item"><a class="header__menu-link active" href="#">Статьи</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+							<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
+							<li class="header__menu-item"><a class="header__menu-link active" href="#">Контакты</a></li>
 						</ul>
 					</nav>
-					<a class="header__callback" href="#">задать вопрос</a>
+					<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
 				</div>
 			</div>
 			<img class="header-paralax paralax" src="images/header-paralax.webp" alt="">
@@ -367,8 +368,26 @@
 				</footer>
 				<a class="scroll" href="#top"><img src="images/scroll.svg" alt=""></a>
 			</div>
+			<div class="popup" id="popup">
+				<div class="question__form-wrap form">
+					<form action="#" id="form" method="POST">
+						<h2 class="question__title title-h2">Задать <span>вопрос</span></h2>
+						<div class="question__form-inputwrap inputwrap _req"><input class="question__form-input input" name="name" type="text" placeholder="Ваше имя"></div>
+						<div class="question__form-inputwrap inputwrap _req"><input class="question__form-input input" name="email" type="text" placeholder="E-mail"></div>
+						<div class="question__form-inputwrap inputwrap"><input class="question__form-input input" name="tel" type="text" placeholder="Телефон"></div>
+						<div class="question__form-inputwrap inputwrap"><textarea class="question__form-input input" name="ask" placeholder="Вопрос"></textarea></div>
+						<p class="question__form-agree formagree">Нажимая на кнопку “Отправить вопрос”, вы соглашаетесь с политикой обработки <span>Персональных данных</span></p>
+						<label class="question__form-btn formbtn btn">
+							<input type="submit">
+							отправить вопрос
+						</label>
+					</form>
+				</div>
+			</div>
 
 			<script src="js/swiper-bundle.min.js"></script>
+			<script src="js/jquery-3.5.1.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
 			<script src="js/main.js"></script>
 			<script>
 				let didScroll = false;
@@ -412,28 +431,6 @@
 				}
 				requestAnimationFrame(rafB);
 				window.addEventListener('scroll', scrollInProgressB);
-			</script>
-			<script src="js/jquery-3.5.1.min.js"></script>
-			<!-- Menu -->
-			<script>
-				$(function(){
-					$('.header__menu-res, .header-dropdown__inner').on('mouseover', function(){
-						$('.header-dropdown').removeClass('hide');
-						$('.header-dropdown').addClass('active');
-					});
-					$('.header__menu-other').on('mouseover', function(){
-						$('.header-dropdown').removeClass('active');
-					});
-					$('.header-dropdown').on('mouseleave', function(){
-						$('.header-dropdown').removeClass('active');
-					});
-
-
-					$('.scroll').click(function(){
-						$('html, body').animate({scrollTop:0}, 'slow');
-						return false;
-					});
-				});
 			</script>
 		</body>
 
