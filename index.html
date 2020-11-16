@@ -17,7 +17,14 @@
 		<div class="header-hide">
 			<div class="container">
 				<div class="header-hide__inner">
-					<a href="#" class="logo"><img src="images/logo2.svg" alt=""></a>
+					<div class="header__top-start">
+						<div class="burger-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
+					</div>
 					<nav class="header__menu">
 						<ul class="header__menu-list">
 							<li class="header__menu-item"><a class="header__menu-link header__menu-other active" href="#">Главная</a></li>
@@ -41,57 +48,70 @@
 							<img src="images/telegram-wh.svg" alt="">
 						</a>
 					</div>
+					<a href="tel:+74951753065" class="header__callback header__calltel"><img src="images/tel-mob.svg" alt=""></a>
 				</div>
 			</div>
 		</div>
 		<header class="header main-header" style="background-image: url(images/main-bg.webp);">
 			<div class="container">
-				<div class="header__top">
-					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
-					<div class="header__communication">
-						<p class="header__communication-tel">+7 (495) 175-30-65</p>
-						<a class="header__communication-email" href="mailto:info@smb-comp.ru">info@smb-comp.ru</a>
-						<p class="header__communication-time">Работаем с 09:00 до 21:00 без выходных</p>
+				<div class="header-topwrap">
+					<div class="header__top">
+						<div class="header__top-start">
+							<div class="burger-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
+						</div>
+
+						<div class="header__communication">
+							<p class="header__communication-tel">+7 (495) 175-30-65</p>
+							<a class="header__communication-email" href="mailto:info@smb-comp.ru">info@smb-comp.ru</a>
+							<p class="header__communication-time">Работаем с 09:00 до 21:00 без выходных</p>
+						</div>
+						<div class="header__search">
+							<form role="search" method="get" id="searchform" action="#" >
+								<input class="header__search-input" type="text" placeholder="Поиск по сайту">
+								<label class="header__search-btn">
+									<input type="submit">
+									<img src="images/search.svg" alt="">
+								</label>
+							</form>
+						</div>
+						<div class="social">
+							<a class="social__item" href="#">
+								<img src="images/facebook.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/instagram.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/youtube.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/telegram.webp" alt="">
+							</a>
+						</div>
+						<a href="tel:+74951753065" class="header__callback header__calltel"><img src="images/tel-mob.svg" alt=""></a>
 					</div>
-					<div class="header__search">
-						<form role="search" method="get" id="searchform" action="#" >
-							<input class="header__search-input" type="text" placeholder="Поиск по сайту">
-							<label class="header__search-btn">
-								<input type="submit">
-								<img src="images/search.svg" alt="">
-							</label>
-						</form>
-					</div>
-					<div class="social">
-						<a class="social__item" href="#">
-							<img src="images/facebook.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/instagram.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/youtube.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/telegram.webp" alt="">
-						</a>
+					<div class="header__bottom">
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other active" href="#">Главная</a></li>
+								<li class="header__menu-item"><p class="header__menu-link header__menu-res">Решения<img src="images/arrow.svg" alt=""></p></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Поддержка</a></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Статьи</a></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
 					</div>
 				</div>
-				<div class="header__bottom">
-					<nav class="header__menu">
-						<ul class="header__menu-list">
-							<li class="header__menu-item"><a class="header__menu-link header__menu-other active" href="#">Главная</a></li>
-							<li class="header__menu-item"><p class="header__menu-link header__menu-res">Решения<img src="images/arrow.svg" alt=""></p></li>
-							<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Поддержка</a></li>
-							<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Статьи</a></li>
-							<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Контакты</a></li>
-						</ul>
-					</nav>
-					<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
-				</div>
+				
 				<div class="header__main">
 					<div class="header__main-top">
-						<h1 class="header__main-title title-h1">ИТ-решения для малого бизнеса</h1>
+						<h1 class="header__main-title title-h1">ИТ-решения<br>для малого бизнеса</h1>
 						<img src="images/main-img.webp" alt="">
 					</div>
 					<div class="header__main-slider main-slider">
@@ -99,128 +119,160 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Что будет, если вы потеряете все рабочие файлы?</h4>
-										<p class="main-slider__slide-category">Надежное хранение и удаленный доступ к файлам</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Что будет, если вы потеряете все рабочие файлы?</h4>
+											<p class="main-slider__slide-category">Надежное хранение и удаленный доступ к файлам</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Не получается настроить удаленную работу сотрудников?</h4>
-										<p class="main-slider__slide-category">Организация удаленной работы</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Не получается настроить удаленную работу сотрудников?</h4>
+											<p class="main-slider__slide-category">Организация удаленной работы</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Медленный интернет и постоянно висит офисный WiFi?</h4>
-										<p class="main-slider__slide-category">WiFi сеть</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Медленный интернет и постоянно висит офисный WiFi?</h4>
+											<p class="main-slider__slide-category">WiFi сеть</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide popular">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
 								</div>
 								<div class="swiper-slide">
 									<div class="main-slider__slide">
-										<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
-										<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										<div class="main-slider__slide-info">
+											<h4 class="main-slider__slide-name title-h4">Постоянные проблемы с компьютерами? Болят глаза от мелких мониторов?</h4>
+											<p class="main-slider__slide-category">Компьютеры для сотрудников</p>
+										</div>
 										<p class="main-slider__slide-price price">от 30 000 ₽</p>
 										<a class="main-slider__slide-btn" href="#">Подробнее</a>
 									</div>
@@ -233,6 +285,7 @@
 			</div>
 			<img class="header-paralax paralax" src="images/header-paralax.webp" alt="">
 		</header>
+		<div class="header-dropdown-vis"></div>
 		<nav class="header-dropdown menu-dropdownres hide">
 			<div class="header-dropdown__inner">
 				<div class="header-dropdown__items">
@@ -353,6 +406,7 @@
 					<div class="advantages__info">
 						<div class="advantages__info-top">
 							<h2 class="advantages__title title-h2">Разработано<br>для <span>малого бизнеса</span></h2>
+							<img class="advantages__infoimg" src="images/advantages.webp" alt="">
 						</div>
 						<div class="advantages__items">
 							<a class="advantages__item">
@@ -567,26 +621,37 @@
 					<div class="work__review">
 						<h2 class="work__review-title title-h2">Отзывы <span>о нашей работе</span></h2>
 						<div class="work__review-items">
-							<div class="work__review-item review-item">
-								<div class="review-item__top"><img src="images/user.svg" alt="">
-									<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
+							<div class="review-container">
+								<div class="review-wrapper">
+									<div class="review-slide">
+										<div class="work__review-item review-item">
+											<div class="review-item__top"><img src="images/user.svg" alt="">
+												<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
+											</div>
+											<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
+											<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
+										</div>
+									</div>
+									<div class="review-slide">
+										<div class="work__review-item review-item">
+											<div class="review-item__top"><img src="images/user.svg" alt="">
+												<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
+											</div>
+											<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
+											<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
+										</div>
+									</div>
+									<div class="review-slide">
+										<div class="work__review-item review-item">
+											<div class="review-item__top"><img src="images/user.svg" alt="">
+												<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
+											</div>
+											<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
+											<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
+										</div>
+									</div>
 								</div>
-								<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
-								<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
-							</div>
-							<div class="work__review-item review-item">
-								<div class="review-item__top"><img src="images/user.svg" alt="">
-									<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
-								</div>
-								<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
-								<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
-							</div>
-							<div class="work__review-item review-item">
-								<div class="review-item__top"><img src="images/user.svg" alt="">
-									<svg class="decision-svg" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="23.0769" y="46.1538" width="3.84615" height="3.84615"/><rect x="34.6155" y="46.1538" width="3.84615" height="3.84615"/><rect x="46.1538" y="46.1538" width="3.84615" height="3.84615"/><rect y="46.1538" width="3.84615" height="3.84615"/><rect x="11.5386" y="46.1538" width="3.84615" height="3.84615"/><rect x="23.0769" y="34.6155" width="3.84615" height="3.84615"/><rect x="34.6155" y="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" y="34.6155" width="3.84615" height="3.84615"/><rect y="34.6155" width="3.84615" height="3.84615"/><rect x="11.5386" y="34.6155" width="3.84615" height="3.84615"/><rect x="23.0769" y="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" y="23.0769" width="3.84615" height="3.84615"/><rect x="46.1538" y="23.0769" width="3.84615" height="3.84615"/><rect y="23.0769" width="3.84615" height="3.84615"/><rect x="11.5386" y="23.0769" width="3.84615" height="3.84615"/><rect x="23.0769" y="11.5386" width="3.84615" height="3.84615"/><rect x="34.6155" y="11.5386" width="3.84615" height="3.84615"/><rect x="46.1538" y="11.5386" width="3.84615" height="3.84615"/><rect y="11.5386" width="3.84615" height="3.84615"/><rect x="11.5386" y="11.5386" width="3.84615" height="3.84615"/><rect x="23.0769" width="3.84615" height="3.84615"/><rect x="34.6155" width="3.84615" height="3.84615"/><rect x="46.1538" width="3.84615" height="3.84615"/><rect width="3.84615" height="3.84615"/><rect x="11.5386" width="3.84615" height="3.84615"/></svg>
-								</div>
-								<h4 class="review-item__title title-h4">Оснащение офиса компании ООО “Ромашка”</h4>
-								<p class="review-item__text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла»</p>
+								<div class="review-pagination"></div>
 							</div>
 						</div>
 					</div>
@@ -710,9 +775,6 @@
 	<script src="js/main.js"></script>
 	<script>
 		var swiper = new Swiper(".swiper-container", {
-			slidesPerView: 4,
-			spaceBetween: 30,
-			slidesPerGroup: 4,
 			loop: true,
 			speed: 800,
 			autoplay: true,
@@ -721,22 +783,86 @@
 					slidesPerView: 1,
 					spaceBetween: 10,
 					slidesPerGroup: 1,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						type: 'fraction',
+					}
 				},
-				768: {
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 60,
+					slidesPerGroup: 1,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						type: 'fraction',
+					}
+				},
+				800: {
 					slidesPerView: 3,
 					spaceBetween: 30,
 					slidesPerGroup: 3,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						type: 'bullets',
+					}
 				},
-				1281: {
+				1280: {
 					slidesPerView: 4,
 					spaceBetween: 20,
 					slidesPerGroup: 4,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						type: 'bullets',
+					}
 				},
 			},
+		});
+
+		var swiper = new Swiper('.review-container', {
+			slideClass: 'review-slide',
+			wrapperClass: 'review-wrapper',
+			slidesPerView: 2,
+			spaceBetween: 40,
+			loop: true,
 			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			}
+				el: '.review-pagination',
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+					slidesPerGroup: 1,
+					pagination: {
+						el: ".review-pagination",
+						clickable: true,
+						type: 'fraction',
+					}
+				},
+				700: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+					slidesPerGroup: 1,
+					pagination: {
+						el: ".review-pagination",
+						clickable: true,
+						type: 'fraction',
+					}
+				},
+				980: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+					slidesPerGroup: 3,
+					pagination: {
+						el: ".review-pagination",
+						clickable: true,
+						type: 'bullets',
+					}
+				},
+			},
 		});
 	</script>
 	<script>let didScroll=!1,paralaxTitles=document.querySelectorAll(".header-paralax");const scrollInProgress=()=>{didScroll=!0},raf=()=>{didScroll&&(paralaxTitles.forEach((r,e)=>{r.style.transform="translateY(-"+window.scrollY/30+"%)"}),didScroll=!1),requestAnimationFrame(raf)};function offset(r){var e=r.getBoundingClientRect(),l=window.pageYOffset||document.documentElement.scrollTop;return{top:e.top+l}}requestAnimationFrame(raf),window.addEventListener("scroll",scrollInProgress);let didScrollA=!1,paralaxTitlesA=document.querySelectorAll(".decision-paralax");var div=document.querySelector(".decision"),divOffset=offset(div).top;const scrollInProgressA=()=>{didScrollA=!0},rafA=()=>{didScrollA&&(paralaxTitlesA.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffset+700)/15+"%)"}),didScrollA=!1),requestAnimationFrame(rafA)};requestAnimationFrame(rafA),window.addEventListener("scroll",scrollInProgressA);let didScrollB=!1,paralaxTitlesB=document.querySelectorAll(".question-paralax");var divB=document.querySelector(".question"),divOffsetB=offset(divB).top;const scrollInProgressB=()=>{didScrollB=!0},rafB=()=>{didScrollB&&(paralaxTitlesB.forEach((r,e)=>{r.style.transform="translateY(-"+(window.pageYOffset-divOffsetB+700)/40+"%)"}),didScrollB=!1),requestAnimationFrame(rafB)};requestAnimationFrame(rafB),window.addEventListener("scroll",scrollInProgressB);</script>
