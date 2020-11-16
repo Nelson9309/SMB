@@ -2094,15 +2094,12 @@
 .header-support__item-description{
 	color: #0F91E3;
 }
-.support-header{
-	padding-bottom: 280px;
-}
 .answers{
 	padding: 100px 0 150px;
 	&__head{
 		margin-bottom: 50px;
 		position: relative;
-		margin-top: -350px;
+		margin-top: -255px;
 		color: #fff;
 		z-index: 6;
 		.header__main-title{
@@ -2178,7 +2175,7 @@
 	background-repeat: no-repeat;
 	background-position: 85px 270px;
 	.answers__head{
-		margin-top: -400px;
+		margin-top: -300px;
 	}
 
 }
@@ -2381,7 +2378,7 @@
 	z-index: 6;
 }
 .contacts{
-	margin-top: -220px;
+	margin-top: -95px;
 	padding-bottom: 60px;
 	position: relative;
 	z-index: 6;
