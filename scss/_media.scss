@@ -550,6 +550,18 @@
 	.header__main-title{
 		margin-bottom: 20px;
 	}
+	.breadcrumbs{
+		display: none;
+	}
+	.solutions__head .header__main-title {
+		margin-bottom: 20px;
+	}
+	.solutions__head .header__main-text {
+		margin-top: 0;
+	}
+	.solutions {
+		padding: 60px 0;
+	}
 	.better__item:nth-child(odd){
 		flex-direction: column-reverse;
 		img{
@@ -596,6 +608,15 @@
 	}
 	.advantages__item:first-child{
 		margin-top: 0;
+	}
+	.solutions__head{
+		margin-bottom: 80px;
+	}
+	.category-solutions {
+		margin-top: -300px;
+	}
+	.category-header {
+		padding-bottom: 260px;
 	}
 }
 @media (max-width: 650px){
