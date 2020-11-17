@@ -1870,6 +1870,7 @@
 	&-order__items{
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	&-order__item{
@@ -1915,6 +1916,7 @@
 		display: flex;
 		padding: 15px 35px 15px 25px;
 		overflow: hidden;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #FFFFFF;
@@ -2021,7 +2023,8 @@
 		background-color: #f8f8f8;
 		img{
 			display: block;
-			width: 100%;
+			max-width: 100%;
+			max-height: 100%;
 		}
 	}
 	&__item-title{
