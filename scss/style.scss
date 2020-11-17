@@ -1325,6 +1325,9 @@
 		background: linear-gradient(159.07deg, #80D3FD -6.75%, #1393E4 63.33%);
 		border-radius: 30px;
 		display: inline-block;
+		span{
+			color: #FFFFFF;
+		}
 	}
 	&__block{
 		&+&{
@@ -1332,7 +1335,7 @@
 		}
 	}
 	&-item__wrap{
-		padding: 50px 0;
+		padding: 0 0 50px;
 		&:nth-child(odd){
 			background-color: #F1F9FF;
 		}
@@ -1354,9 +1357,15 @@
 		max-width: 178px;
 		max-height: 178px;
 	}
+	&-item__info{
+		.infrastructure-item__title{
+			display: block;
+		}
+	}
 	&-item__title{
 		margin-bottom: 15px;
 		color: #0F91E3;
+		display: none;
 	}
 	&-item__text{
 		margin-bottom: 15px;
@@ -1365,24 +1374,16 @@
 		padding: 12px 54px;
 	}
 	&-item__products{
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: flex-start;
+
 	}
 	&-item__product{
 		display: flex;
 		align-items: center;
-		max-width: calc(100% / 2 - 15px);
 		width: 100%;
 		background-color: #FFFFFF;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 		border-radius: 10px;
 		padding: 20px 25px 20px 20px;
-		margin-top: 20px;
-		&:nth-child(-n+2){
-			margin-top: 0;
-		}
 	}
 	&-product__img{
 		display: block;
@@ -1390,6 +1391,12 @@
 	}
 	&-product__title{
 		margin-bottom: 15px;
+		display: none;
+	}
+	&-product__info{
+		.infrastructure-product__title{
+			display: block;
+		}
 	}
 	&-product__text{
 		margin-bottom: 20px;
@@ -1419,6 +1426,7 @@
 	&__items{
 		display: flex;
 		align-items: stretch;
+		flex-wrap: wrap;
 	}
 	&__item{
 		max-width: calc(100% / 4 - 16px);
@@ -1484,6 +1492,14 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
+	&-video{
+		iframe{
+			margin-top: auto;
+			margin-bottom: -150px;
+			width: 800px;
+			height: 420px;
+		}
+	}
 	&-paralax{
 		left: 77px;
 		bottom: 11px;
@@ -1491,10 +1507,10 @@
 	&__item{
 		margin-top: -95px;
 	}
-	.decision__item{
+	.services__item{
 		margin-top: 30px;
 		&:nth-child(-n+4){
-			margin-top: -95px !important;
+			margin-top: -95px;
 		}
 	}
 	&-solutions{
@@ -1555,7 +1571,6 @@
 		flex-wrap: wrap;
 	}
 	&__item{
-		max-width: calc(100% / 3 - 20px);
 		background-color: #FFFFFF;
 		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
 		border-radius: 10px;
@@ -2699,7 +2714,10 @@
 		display: none;
 	}
 }
-
+.swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+	top: auto;
+	bottom: 0;
+}
 
 
 
