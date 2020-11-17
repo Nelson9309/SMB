@@ -45,54 +45,77 @@
 				</div>
 			</div>
 		</div>
-		<header class="header product-header" style="background-image: url(images/header-all.webp);">
+		<header class="header" style="background-image: url(images/header-all.webp);">
 			<div class="container">
-				<div class="header__top">
-					<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
-					<div class="header__communication">
-						<p class="header__communication-tel">+7 (495) 175-30-65</p>
-						<a class="header__communication-email" href="mailto:info@smb-comp.ru">info@smb-comp.ru</a>
-						<p class="header__communication-time">Работаем с 09:00 до 21:00 без выходных</p>
+				<div class="header-topwrap">
+					<div class="header__top">
+						<div class="header__top-start">
+							<div class="burger-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<a href="#" class="logo"><img src="images/logo.webp" alt=""></a>
+						</div>
+						<div class="header__communication">
+							<p class="header__communication-tel">+7 (495) 175-30-65</p>
+							<a class="header__communication-email" href="mailto:info@smb-comp.ru">info@smb-comp.ru</a>
+							<p class="header__communication-time">Работаем с 09:00 до 21:00 без выходных</p>
+						</div>
+						<div class="header__search">
+							<form role="search" method="get" id="searchform" action="#" >
+								<input class="header__search-input" type="text" placeholder="Поиск по сайту">
+								<label class="header__search-btn">
+									<input type="submit">
+									<img src="images/search.svg" alt="">
+								</label>
+							</form>
+						</div>
+						<div class="social">
+							<a class="social__item" href="#">
+								<img src="images/facebook.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/instagram.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/youtube.webp" alt="">
+							</a>
+							<a class="social__item" href="#">
+								<img src="images/telegram.webp" alt="">
+							</a>
+						</div>
+						<a href="tel:+74951753065" class="header__callback header__calltel"><img src="images/tel-mob.svg" alt=""></a>
 					</div>
-					<div class="header__search">
-						<form role="search" method="get" id="searchform" action="#" >
-							<input class="header__search-input" type="text" placeholder="Поиск по сайту">
-							<label class="header__search-btn">
-								<input type="submit">
-								<img src="images/search.svg" alt="">
-							</label>
-						</form>
-					</div>
-					<div class="social">
-						<a class="social__item" href="#">
-							<img src="images/facebook.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/instagram.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/youtube.webp" alt="">
-						</a>
-						<a class="social__item" href="#">
-							<img src="images/telegram.webp" alt="">
-						</a>
+					<div class="header__bottom">
+						<nav class="header__menu">
+							<ul class="header__menu-list">
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other active" href="#">Главная</a></li>
+								<li class="header__menu-item"><p class="header__menu-link header__menu-res">Решения<img src="images/arrow.svg" alt=""></p></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Поддержка</a></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Статьи</a></li>
+								<li class="header__menu-item"><a class="header__menu-link header__menu-other" href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
 					</div>
 				</div>
-				<div class="header__bottom">
-					<nav class="header__menu">
-						<ul class="header__menu-list">
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Решения<img src="images/arrow.svg" alt=""></a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
-							<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+				<div class="header__main">
+					<h1 class="header__main-title title-h1">Не уверены в добросовестности работников? </h1>
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__list-item">
+								<a href="#"></a>
+							</li>
 						</ul>
-					</nav>
-					<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
+					</div>
+					<div class="header__main-text"></div>
+					<div class="header__main-descr"></div>
 				</div>
 			</div>
 			<img class="header-paralax paralax" src="images/header-paralax.webp" alt="">
 		</header>
+		<div class="header-dropdown-vis hide"></div>
 		<nav class="header-dropdown menu-dropdownres hide">
 			<div class="header-dropdown__inner">
 				<div class="header-dropdown__items">
@@ -515,7 +538,7 @@
 				});
 
 			});
-		
+
 		</script>
 	</body>
 
