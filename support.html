@@ -297,6 +297,7 @@
 					<aside class="answers__aside aside">
 						<div class="answers__aside-top aside__top">
 							<h4 class="answers__aside-title title-h4">Выберите раздел</h4>
+							<img src="images/arrow4.svg" alt="">
 						</div>
 						<div class="answers__aside-tabswrap aside__tabswrap">
 							<ul class="answers__aside-tabslist aside__tabslist">
@@ -1210,9 +1211,6 @@
 				requestAnimationFrame(raf);
 			}
 
-
-			requestAnimationFrame(raf);
-			window.addEventListener('scroll', scrollInProgress);
 		</script>
 		<script>
 			$(function() {
@@ -1226,6 +1224,17 @@
 					$(".aside__tabcontent").hide(0);
 					$(".aside__tabcontent[data-tabcontent=" + t + "]").fadeIn(300);
 				});
+
+				if(window.matchMedia('(max-width: 800px)').matches) {
+					$('.aside__top').on('click', function(){
+						$('.aside__tabswrap').slideToggle();
+						$(this).toggleClass('active');
+					});
+					$('.aside__tabsitem').on('click', function(){
+						var secText = $(this).text();
+						$('.answers__aside-title').text(secText);
+					});
+				} else {}
 			});
 		</script>
 	</body>
