@@ -352,6 +352,9 @@
 			margin-top: 0;
 		}
 	}
+	.article__main-wrap iframe{
+		    height: 359px;
+	}
 }
 @media (min-width: 981px){
 	.infrastructure{
@@ -1087,6 +1090,48 @@
 	}
 	.bonus__item {
 		padding: 30px 20px;
+	}
+	.article-header{
+		padding-bottom: 60px !important;
+		.header__main{
+			display: block;
+		}
+	}
+	.article__main-top{
+		display: none;
+	}
+	.answers-article{
+		margin-top: -185px;
+		.aside{
+			margin-bottom: 15px;
+		}
+	}
+	.article__main-quote img {
+		margin: 15px 15px 15px 0;
+		display: block;
+		max-width: 100px;
+	}
+	.article__main-quote{
+		align-items: center;
+	}
+	.article__main-quote {
+		padding: 20px;
+	}
+	.article__main-wrap{
+		h2{
+			margin: 25px 0 20px;
+			font-size: 26px;
+			line-height: 110%;
+		}
+		h3{
+			margin: 25px 0 15px;
+			font-size: 18px;
+			line-height: 110%;
+		}
+		h4{
+			margin: 30px 0 15px;
+			font-size: 16px;
+		}
 	}
 }
 @media (max-width: 650px){

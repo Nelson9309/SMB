@@ -2317,6 +2317,11 @@
 		justify-content: space-between;
 		max-width: 29%;
 	}
+	&-header{
+		.header__main{
+			display: none;
+		}
+	}
 	&__main-wrap{
 		p+p{
 			margin-top: 20px;
