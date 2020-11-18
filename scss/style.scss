@@ -2758,9 +2758,11 @@
 	}
 	&-solutions{
 		padding: 100px 0 230px;
-		margin: -20px 0 -70px;
+		margin: -20px 0 0;
 	}
-
+	&-footer{
+		background-color: #F1F9FF;
+	}
 }
 .scroll{
 	display: block;
