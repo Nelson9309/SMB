@@ -2110,7 +2110,18 @@
 			requestAnimationFrame(raf);
 			window.addEventListener('scroll', scrollInProgress);
 		</script>
-		<script>$(function(){$(".answers__main-itemtop").on("click",function(){$(this).toggleClass("active"),$(this).siblings().slideToggle(300)}),$(".aside__tabsitem").on("click",function(){var t=$(this).attr("data-tab");$(".aside__tabsitem").removeClass("active"),$(this).addClass("active"),$(".aside__tabcontent").hide(0),$(".aside__tabcontent[data-tabcontent="+t+"]").fadeIn(300)})});</script>
-	</body>
+		<script>$(function(){$(".answers__main-itemtop").on("click",function(){$(this).toggleClass("active"),$(this).siblings().slideToggle(300)}),$(".aside__tabsitem").on("click",function(){var t=$(this).attr("data-tab");$(".aside__tabsitem").removeClass("active"),$(this).addClass("active"),$(".aside__tabcontent").hide(0),$(".aside__tabcontent[data-tabcontent="+t+"]").fadeIn(300)})});
+		if(window.matchMedia('(max-width: 800px)').matches) {
+			$('.aside__top').on('click', function(){
+				$('.aside__tabswrap').slideToggle();
+				$(this).toggleClass('active');
+			});
+			$('.aside__tabsitem').on('click', function(){
+				var secText = $(this).text();
+				$('.answers__aside-title').text(secText);
+			});
+		} else {}
+	</script>
+</body>
 
-	</html>
+</html>

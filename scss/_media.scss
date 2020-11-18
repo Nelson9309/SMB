@@ -865,6 +865,14 @@
 	.product {
 		margin-top: -125px;
 	}
+	.answers-blog .aside {
+		max-width: 240px;
+		margin-right: 20px;
+	}
+	.blog__item-img{
+		margin-right: 15px;
+		min-width: 190px;
+	}
 }
 @media (max-width: 800px){
 	.header__main-top{
@@ -1033,7 +1041,7 @@
 		flex-direction: column;
 	}
 	.aside {
-		max-width: 100%;
+		max-width: 100% !important;
 	}
 	.answers__aside{
 		position: relative;
