@@ -34,6 +34,13 @@ $(function(){
 		$('.header-dropdown').removeClass('hide');
 		$('.header-dropdown').toggleClass('active');
 	});
+	$('.header__menu-res').on('click', function(){
+		$('.header-dropdown__inner').slideToggle();
+	});
+	$('.header-dropdown__item-categorytitle').on('click', function(){
+		$(this).toggleClass('active');
+		$(this).siblings().slideToggle();
+	});
 
 	$('.header__callback').magnificPopup({
 		type:'inline',
