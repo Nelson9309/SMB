@@ -53,7 +53,7 @@
 				</div>
 			</div>
 		</div>
-		<header class="header" style="background-image: url(images/header-all.webp);">
+		<header class="header header-promo" style="background-image: url(images/header-all.webp);">
 			<div class="container">
 				<div class="header-topwrap">
 					<div class="header__top">
@@ -297,32 +297,41 @@
 		</nav>
 		<section class="product promotion">
 			<div class="container">
-				<div class="product__inner">
+				<div class="product__inner sale">
+					<h1 class="product__title title-h2">IP-камера наблюдения WiFi smart camera 1080P</h1>
 					<div class="product__slider">
-						<div class="product__slider-container gallery-top">
-							<div class="product-wrapper">
-								<div class="product-slide">
-									<div class="product__slider-itemprev"><img src="images/promotion-img.webp" alt=""></div>
+						<div class="product__slider-container1 gallery-top">
+							<div class="product-wrapper1">
+								<div class="product-slide1">
+									<div class="product__slider-itemprev"><img src="images/productslider-img1.webp" alt=""></div>
 								</div>
-								<div class="product-slide">
+								<div class="product-slide1">
 									<div class="product__slider-itemprev"><img src="images/productslider-img2.webp" alt=""></div>
 								</div>
-								<div class="product-slide">
+								<div class="product-slide1">
 									<div class="product__slider-itemprev"><img src="images/productslider-img3.webp" alt=""></div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-container gallery-thumbs">
-							<div class="product-wrapper wrapbb">
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/promotion-img.webp" alt=""></div>
+						<div class="gallery-thumbs-wrap">
+							<div class="product__slider-container2 gallery-thumbs">
+								<div class="product-wrapper2">
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img1.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
+									</div>
 								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
-								</div>
+							</div>
+							<div class="swiper-button-next">
+								<svg class="PreviewList__icon Icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.46967 5.96967C8.76256 5.67678 9.23744 5.67678 9.53033 5.96967L13.5607 10L9.53033 14.0303C9.23744 14.3232 8.76256 14.3232 8.46967 14.0303C8.17678 13.7374 8.17678 13.2626 8.46967 12.9697L11.4393 10L8.46967 7.03033C8.17678 6.73744 8.17678 6.26256 8.46967 5.96967Z"></path></svg>
+							</div>
+							<div class="swiper-button-prev">
+								<svg class="PreviewList__icon Icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.46967 5.96967C8.76256 5.67678 9.23744 5.67678 9.53033 5.96967L13.5607 10L9.53033 14.0303C9.23744 14.3232 8.76256 14.3232 8.46967 14.0303C8.17678 13.7374 8.17678 13.2626 8.46967 12.9697L11.4393 10L8.46967 7.03033C8.17678 6.73744 8.17678 6.26256 8.46967 5.96967Z"></path></svg>
 							</div>
 						</div>
 					</div>
@@ -388,7 +397,9 @@
 								<div class="bonus__form-inputwrap inputwrap _req"><input class="question__form-input input" name="name" type="text" placeholder="Ваше имя"></div>
 								<div class="bonus__form-inputwrap inputwrap _req"><input class="question__form-input input" name="email" type="text" placeholder="E-mail"></div>
 								<div class="bonus__form-inputwrap inputwrap"><input class="question__form-input input" name="tel" type="text" placeholder="Телефон"></div>
-								<div class="bonus__form-payment bonus-payment">
+								<!-- Оплата наличными или нет -->
+								
+								<!-- <div class="bonus__form-payment bonus-payment">
 									<label>
 										<input class="bonus-payment__radio" type="radio" name="payment" id="" value="1" checked>
 										<div class="bonus-payment__btn btn3">Оплата наличными</div>
@@ -397,7 +408,7 @@
 										<input class="bonus-payment__radio" type="radio" name="payment" id="" value="2">
 										<div class="bonus-payment__btn btn3">Безналичный рассчет</div>
 									</label>
-								</div>
+								</div> -->
 								<p class="bonus__form-agree formagree">Нажимая на кнопку “Отправить вопрос”, вы соглашаетесь с политикой обработки <span style="color: #0F91E3;">Персональных данных</span></p>
 								<label class="bonus__form-btn formbtn btn">
 									<input type="submit">
@@ -556,20 +567,21 @@
 		<!-- Слайдер -->
 		<script>
 			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				spaceBetween: 10,
-				freeMode: true,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
+				spaceBetween: 20,
 				slidesPerView: 4,
-				wrapperClass: 'product-wrapper',
-				slideClass: 'product-slide',
+				wrapperClass: 'product-wrapper2',
+				slideClass: 'product-slide2',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
 			});
 			var galleryTop = new Swiper('.gallery-top', {
 				spaceBetween: 10,
-				wrapperClass: 'product-wrapper',
+				wrapperClass: 'product-wrapper1',
 				effect: 'fade',
 				autoplay: true,
-				slideClass: 'product-slide',
+				slideClass: 'product-slide1',
 				autoplay: {
 					delay: 3000,
 				},

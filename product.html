@@ -106,15 +106,6 @@
 							</ul>
 						</nav>
 						<a class="header__callback mfp-with-zoom" href="#popup" data-mfp-src="#popup">задать вопрос</a>
-						<nav class="header__menu">
-							<ul class="header__menu-list">
-								<li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-								<li class="header__menu-item"><a class="header__menu-link header__menu-res" href="#">Решения<img src="images/arrow.svg" alt=""></a></li>
-								<li class="header__menu-item"><a class="header__menu-link" href="#">Поддержка</a></li>
-								<li class="header__menu-item"><a class="header__menu-link" href="#">Статьи</a></li>
-								<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
-							</ul>
-						</nav>
 					</div>
 				</div>
 				<div class="header__main">
@@ -299,31 +290,47 @@
 			<div class="container">
 				<div class="product__inner">
 					<div class="product__slider">
-						<div class="product__slider-container gallery-top">
-							<div class="product-wrapper">
-								<div class="product-slide">
+						<div class="product__slider-container1 gallery-top">
+							<div class="product-wrapper1">
+								<div class="product-slide1">
 									<div class="product__slider-itemprev"><img src="images/productslider-img1.webp" alt=""></div>
 								</div>
-								<div class="product-slide">
+								<div class="product-slide1">
 									<div class="product__slider-itemprev"><img src="images/productslider-img2.webp" alt=""></div>
 								</div>
-								<div class="product-slide">
+								<div class="product-slide1">
+									<div class="product__slider-itemprev"><img src="images/productslider-img3.webp" alt=""></div>
+								</div>
+								<div class="product-slide1">
+									<div class="product__slider-itemprev"><img src="images/productslider-img2.webp" alt=""></div>
+								</div>
+								<div class="product-slide1">
 									<div class="product__slider-itemprev"><img src="images/productslider-img3.webp" alt=""></div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-container gallery-thumbs">
-							<div class="product-wrapper wrapbb">
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img1.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
-								</div>
-								<div class="product-slide">
-									<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
+						<div class="gallery-thumbs-wrap">
+							<div class="product__slider-container2 gallery-thumbs">
+								<div class="product-wrapper2">
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img1.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img2.webp" alt=""></div>
+									</div>
+									<div class="product-slide2">
+										<div class="product__slider-itemtab"><img src="images/productslider-img3.webp" alt=""></div>
+									</div>
 								</div>
 							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 					<div class="product__info">
@@ -680,21 +687,23 @@
 		<script src="js/main.js"></script>
 		<!-- Слайдер -->
 		<script>
+
 			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				spaceBetween: 10,
-				freeMode: true,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
+				spaceBetween: 20,
 				slidesPerView: 4,
-				wrapperClass: 'product-wrapper',
-				slideClass: 'product-slide',
+				wrapperClass: 'product-wrapper2',
+				slideClass: 'product-slide2',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
 			});
 			var galleryTop = new Swiper('.gallery-top', {
 				spaceBetween: 10,
-				wrapperClass: 'product-wrapper',
+				wrapperClass: 'product-wrapper1',
 				effect: 'fade',
 				autoplay: true,
-				slideClass: 'product-slide',
+				slideClass: 'product-slide1',
 				autoplay: {
 					delay: 3000,
 				},
@@ -751,8 +760,21 @@
 								type: 'progressbar',
 							}
 						},
+						1024: {
+							slidesPerView: 3,
+							autoplay: false,
+							spaceBetween: 20,
+							allowTouchMove: false,
+							slidesPerGroup: 1,
+							pagination: {
+								el: el.querySelector('.swiper-pagination'),
+								clickable: true,
+								type: 'progressbar',
+							}
+						},
 						1440: {
 							slidesPerView: 4,
+							autoplay: false,
 							spaceBetween: 23,
 							allowTouchMove: false,
 							slidesPerGroup: 1,

@@ -29,6 +29,7 @@ $(function(){
 		$('.header-dropdown').removeClass('active');
 	});
 	$('.burger-btn').on('click', function(){
+		$(this).toggleClass('active');
 		$('.header-dropdown-vis').toggleClass('active');
 		$('.header-dropdown-vis').removeClass('hide');
 		$('.header-dropdown').removeClass('hide');
@@ -41,6 +42,10 @@ $(function(){
 		$(this).toggleClass('active');
 		$(this).siblings().slideToggle();
 	});
+	$('.header__menu-res').on('click', function(){
+		$(this).toggleClass('active');
+	});
+	
 
 	$('.header__callback').magnificPopup({
 		type:'inline',
