@@ -668,6 +668,13 @@
 		max-width: 100% !important;
 		padding: 15px 20px;
 	}
+	.tabprice__table-tarifs{
+		flex-wrap: wrap;
+	}
+	.tabprice__table-tarif{
+		max-width: calc(100% / 2);
+		width: 100%;
+	}
 	.decision__item-info{
 		display: flex;	
 		align-items: center;
@@ -1088,6 +1095,33 @@
 			z-index: 10;
 		}
 	}
+	.tabprice__table-name{
+		max-width: 100%;
+		margin-bottom: 10px;
+	}
+	.tabprice__table-item{
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+	}
+	.tabprice__table-tarifs {
+		max-width: 100%;
+		text-align: left;
+	}
+	.tabprice__table-tarif{
+		span:first-child{
+			display: block;
+			margin-bottom: 5px;
+			color: #8D8D8D;
+		}
+	}
+	.tabprice__table-tarif{
+		margin-top: 20px;
+		&:nth-child(-n+2){
+			margin-top: 0;
+		}
+		&:first-child{
+			text-align: left;
+		}
+	}
 }
 @media (max-width: 800px){
 	.header__main-top{
@@ -1174,35 +1208,6 @@
 	}
 	.category-header {
 		padding-bottom: 260px;
-	}
-	.tabprice__table-name{
-		max-width: 100%;
-		margin-bottom: 10px;
-	}
-	.tabprice__table-item{
-		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-	}
-	.tabprice__table-tarifs {
-		max-width: 100%;
-		text-align: left;
-	}
-	.tabprice__table-tarif{
-		span:first-child{
-			display: block;
-			margin-bottom: 5px;
-			color: #8D8D8D;
-		}
-	}
-	.tabprice__table-tarif{
-		&:first-child{
-			text-align: left;
-		}
-		&:nth-child(2){
-			text-align: center;
-		}
-		&:last-child{
-			text-align: right;
-		}
 	}
 	.solutions-item {
 		margin-top: 20px;
@@ -1385,7 +1390,7 @@
 		margin-top: 40px;
 	}
 	.footer__bottom-inner{
-		padding: 40px 0;
+		padding: 30px 0;
 	}
 	.footer__item:nth-child(-n+2){
 		margin-top: 40px;
@@ -1419,8 +1424,11 @@
 			margin-top: 20px;
 		}
 	}
-	.product__specification-video iframe {
-		min-height: 273px;
+	.product__specification-video {
+		margin-bottom: 15px;
+		iframe {
+			min-height: 273px;
+		}
 	}
 	.header__main .swiper-container {
 		padding-bottom: 35px;
@@ -1535,7 +1543,7 @@
 		right: calc((100vw - 415px) / 2);
 	}
 	.product .gallery-thumbs-wrap .swiper-button-prev, .product .gallery-thumbs-wrap .swiper-container-rtl .swiper-button-next{
-		left: calc((100vw - 415px) / 2);
+		left: calc((100vw - 400px) / 2);
 	}
 	.better {
 		padding-bottom: 60px;
@@ -1566,6 +1574,12 @@
 		display: none;
 	}
 	.work{
+		padding-bottom: 30px;
+	}
+	.main-work{
+		padding: 15px 0 50px;
+	}
+	.footer__items{
 		padding-bottom: 30px;
 	}
 	.about__img{
@@ -1611,27 +1625,46 @@
 	.it{
 		padding-top: 30px;
 	}
+	.product {
+		margin-top: 0;
+		padding-bottom: 25px;
+	}
+	.header-promo{
+		padding-bottom: 100px;
+	}
+	.promotion{
+		margin-top: -30px;
+	}
+	.product-likes{
+		padding: 35px 0;
+	}
+	.product-likes__title {
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+	}
+	.product-likes__block+.product-likes__block {
+		margin-top: 30px;
+	}
+	.answers .pricelist-item{
+		display: none;
+	}
+	.answers__head{
+		margin-bottom: 50px;
+	}
+	.answers__title{
+		padding-top: 0;
+	}
 }
 @media (max-width: 500px){
-	.footer{
-		background-image: url(../images/footer-bgmob.svg) !important;
+	.header-support__item img {
+		max-width: 28px;
+		margin-right: 10px;
 	}
-	.header.main-header{
-		background-image: url(../images/main-bg.webp) !important;
+	.header-support__item.gr{
+		padding: 10px 20px;
 	}
-	.header{
-		background-image: url(../images/header-bgmob.svg) !important;
-	}
-	.footer,
-	.header{
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center -50px;
-	}
-	.main-header{
-		background-size: cover;
-		background-position: center bottom;
-		background-repeat: no-repeat;
+	.head-support{
+		padding-bottom: 200px;
 	}
 	.container{
 		padding: 0 10px;
@@ -1653,8 +1686,8 @@
 	.tabprice__table-btn{
 		width: 100%;
 	}
-	.question{
-		background-size: 200%;
+	.tabprice__table-tarif{
+		margin-top: 10px;
 	}
 	.decision__video{
 		max-width: 100%;
@@ -1700,6 +1733,10 @@
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 100%;
+	}
+	.header-support__item-name{
+		font-size: 14px;
+		line-height: 110%;
 	}
 	.question__img .question__img-text{
 		font-weight: bold;
@@ -1789,8 +1826,15 @@
 		font-size: 14px;
 		line-height: 120%;
 	}
+	.header-support__items{
+		margin-top: 0;
+	}
+	.answers{
+		margin-top: -45px;
+	}
 	.question {
-		padding: 60px 0 140px;
+		padding: 60px 0 70px;
+		background-size: 200%;
 	}
 	.map {
 		padding-bottom: 10px;
@@ -1831,11 +1875,6 @@
 	}
 	.header__main-info{
 		width: 100%;
-	}
-	.product-likes, .maintenance{
-		.swiper-slide{
-			max-width: 92%;
-		}
 	}
 	.product-likes__item,
 	.maintenance__item-main{
@@ -1911,15 +1950,71 @@
 	.tabprice__title{
 		margin-bottom: 25px;
 	}
+	.product__info-description {
+		margin-bottom: 25px;
+	}
+	.product-order {
+		margin-bottom: 25px;
+	}
+	.answers__title{
+		margin-bottom: 20px;
+	}
+	.answers__main{
+		padding-top: 30px;
+	}
+	.answers__main-title {
+		margin-bottom: 20px;
+		padding-bottom: 25px;
+	}
+	.answers{
+		padding-bottom: 10px;
+	}
 }
 @media (max-width: 400px){
+	.question{
+		background-position: left bottom -80px;
+	}
+	.maintenance,
+	.product-likes{
+		.swiper-slide{
+			max-width: 270px;
+		}
+	}
+	.product-header{
+		padding-bottom: 120px;
+	}
+	.product {
+		margin-top: -120px;
+	}
+	.footer-support{
+		background-color: #1492E5;
+	}
+	.footer{
+		background-image: url(../images/footer-bgmob.svg) !important;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	.header.main-header{
+		background-image: url(../images/main-bg.webp) !important;
+	}
+	.header{
+		background-image: url(../images/header-bgmob.svg) !important;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center -50px;
+	}
+	.main-header{
+		background-size: cover;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
 	.work__bg-blue {
 		width: 500%;
 		height: 58%;
 		right: -260px;
 	}
 	.question{
-		background-size: 265%;
+		background-size: 230%;
 	}
 	.question__img img{
 		max-width: 90px;
@@ -1936,7 +2031,7 @@
 		max-width: 85px;
 	}
 	.product__specification-video iframe {
-		min-height: 188px;
+		min-height: 172px;
 	}
 	.bonus__video{
 		height: 172px;
@@ -1960,11 +2055,10 @@
 	.swiper-button-next {
 		display: none;
 	}
-	.header-promo{
-		background-position: -10px top;
-		background-size: cover;
-	}
 	.footer{
 		padding-top: 120px;
+	}
+	.promotion{
+		margin-top: -30px;
 	}
 }

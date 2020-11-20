@@ -377,6 +377,9 @@
 							</p>
 						</div>
 						<div class="product__specification">
+							<div class="product__specification-video">
+								<iframe src="https://www.youtube.com/embed/Es2pWY2ad3I" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: none;"></iframe>
+							</div>
 							<h3 class="product__specification-title title-h3">Характеристики</h3>
 							<div class="product__specification-table">
 								<div class="product__specification-tableitem title-h5">
@@ -459,9 +462,6 @@
 										<p>10 000 ₽</p>
 									</div>
 								</div>
-							</div>
-							<div class="product__specification-video">
-								<iframe src="https://www.youtube.com/embed/Es2pWY2ad3I" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border: none;"></iframe>
 							</div>
 						</div>
 					</div>
@@ -716,7 +716,6 @@
 			sliders.forEach((el) => {
 				var swiper = new Swiper(el, {
 					autoplay: true,
-					loop: true,
 					breakpoints: {
 						320: {
 							slidesPerView: 'auto',
@@ -728,7 +727,7 @@
 								type: 'progressbar',
 							}
 						},
-						500: {
+						400: {
 							slidesPerView: 1,
 							spaceBetween: 10,
 							slidesPerGroup: 1,
