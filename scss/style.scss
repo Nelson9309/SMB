@@ -2177,6 +2177,9 @@
 		}
 	}
 }
+.head-support{
+	padding-bottom: 100px;
+}
 .header-support__item-name{
 	font-weight: bold;
 	font-size: 22px;
@@ -2292,7 +2295,7 @@
 	}
 }
 .header-blog{
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 .answers-blog{
 	margin-top: 50px;
@@ -2302,12 +2305,14 @@
 	background-position: 85px 270px;
 	.answers__head{
 		margin-top: -300px;
+
+		/*220*/
 	}
 
 }
 .blog{
 	&-header{
-		padding-bottom: 265px;
+		padding-bottom: 100px;
 	}
 	&__item{
 		background-color: #FFFFFF;
@@ -2514,6 +2519,9 @@
 	padding-bottom: 60px;
 	position: relative;
 	z-index: 6;
+	&-header{
+		padding-bottom: 100px;
+	}
 	&__top{
 		color: #fff;
 		margin-bottom: 45px;

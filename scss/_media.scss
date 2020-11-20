@@ -48,6 +48,12 @@
 	}
 }
 @media (max-width: 1440px){
+	.contacts__questions-link{
+		margin-left: 20px;
+	}
+	.answers__head{
+		margin-top: -240px;
+	}
 	.decision__video {
 		max-width: 600px;
 		height: 315px;
@@ -399,6 +405,9 @@
 	}
 }
 @media (max-width: 1024px){
+	.contacts__questions-link{
+		margin-left: 0;
+	}
 	.decision__item {
 		max-width: 225px;
 	}
@@ -1022,7 +1031,7 @@
 		padding-right: 0;
 		max-width: 100%;
 		width: 100%;
-		padding-top: 25px;
+		padding-top: 15px;
 	}
 	.product__info-price{
 		max-width: 139px;
@@ -1122,6 +1131,9 @@
 			text-align: left;
 		}
 	}
+	.contacts-header{
+		padding-bottom: 90px;
+	}
 }
 @media (max-width: 800px){
 	.header__main-top{
@@ -1129,6 +1141,16 @@
 		align-items: flex-start;
 		img{
 			margin: 0 auto;
+		}
+	}
+	.error-header{
+		.header__main-top{
+			flex-direction: column-reverse;
+			align-items: flex-start;
+			img{
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
 		}
 	}
 	.header__main{
@@ -1518,6 +1540,7 @@
 	}
 	.promotion .product__info-btn{
 		width: 100%;
+		margin-right: 0;
 	}
 	.promotion__descr{
 		margin-bottom: 20px;
@@ -1630,10 +1653,10 @@
 		padding-bottom: 25px;
 	}
 	.header-promo{
-		padding-bottom: 100px;
+		padding-bottom: 90px;
 	}
 	.promotion{
-		margin-top: -30px;
+		margin-top: -50px;
 	}
 	.product-likes{
 		padding: 35px 0;
@@ -1653,6 +1676,45 @@
 	}
 	.answers__title{
 		padding-top: 0;
+	}
+	.promotion{
+		padding-bottom: 40px;
+	}
+	.promotion .product__info-checkout {
+		margin-bottom: 20px;
+	}
+	.bonus{
+		background-color: #eff7fd;
+		margin: 0 -15px;
+		padding: 20px 15px 0 15px;
+	}
+	.bonus__item-info{
+		padding-bottom: 30px;
+	}
+	.bonus__item{
+		padding: 0;
+	}
+	.bonus__order{
+		padding-top: 40px;
+	}
+	.promo-likes{
+		padding-bottom: 80px;
+	}
+	.blog-header{
+		padding-bottom: 160px;
+		.header__main{
+			padding-top: 0;
+		}
+	}
+	.aside__top{
+		border-radius: 5px;
+		border: 1px solid #fff;
+	}
+	.answers-blog .answers__head{
+		margin-top: -260px;
+	}
+	.head-support{
+		padding-bottom: 100px;
 	}
 }
 @media (max-width: 500px){
@@ -1798,7 +1860,9 @@
 		padding: 6px 0 12px 15px;
 		font-size: 14px;
 		line-height: 22px;
-		min-width: 130px;
+		max-width: 130px;
+		max-height: 40px;
+		overflow: hidden;
 	}
 	.maintenance{
 		padding: 40px 0 60px;
@@ -1855,7 +1919,7 @@
 		padding: 10px 0 10px 15px;
 	}
 	.promotion__price-new{
-		padding: 12px 0 12px 15px;
+		padding: 13px 0 12px 15px;
 		margin-right: 30px;
 	}
 	.promotion-bottom__item{
@@ -1880,22 +1944,9 @@
 	.maintenance__item-main{
 		padding: 15px 15px 20px 15px;
 	}
-	.product .product__inner.sale{
-		&::before{
-			font-size: 12px;
-			line-height: 16px;
-			padding: 4px 18px 5px 19px;
-			top: -18px;
-		}
-		&::after{
-			top: 7px;
-			left: 18px;
-			border: 7px solid transparent;
-			border-top: 7px solid #fff;
-		}
-	}
 	.promotion__timer-inner{
-		margin-left: 0;
+		margin: 0;
+		margin-top: 10px;
 	}
 	.solutions-header{
 		padding-bottom: 70px;
@@ -1959,9 +2010,6 @@
 	.answers__title{
 		margin-bottom: 20px;
 	}
-	.answers__main{
-		padding-top: 30px;
-	}
 	.answers__main-title {
 		margin-bottom: 20px;
 		padding-bottom: 25px;
@@ -1969,10 +2017,25 @@
 	.answers{
 		padding-bottom: 10px;
 	}
+	.contacts{
+		padding-bottom: 45px;
+	}
+	.support-question{
+		padding-bottom: 0;
+	}
+	.answers-article{
+		padding-top: 0;
+		margin-top: -50px;
+	}
 }
 @media (max-width: 400px){
+	.answers-article{
+		padding-top: 0;
+		margin-top: -80px;
+	}
 	.question{
-		background-position: left bottom -80px;
+		background-position: left bottom;
+		background-size: 223%;
 	}
 	.maintenance,
 	.product-likes{
@@ -1994,7 +2057,8 @@
 		background-position: center top;
 		background-repeat: no-repeat;
 	}
-	.header.main-header{
+	.header.main-header,
+	.header.error-header{
 		background-image: url(../images/main-bg.webp) !important;
 	}
 	.header{
@@ -2012,9 +2076,6 @@
 		width: 500%;
 		height: 58%;
 		right: -260px;
-	}
-	.question{
-		background-size: 230%;
 	}
 	.question__img img{
 		max-width: 90px;
@@ -2059,6 +2120,9 @@
 		padding-top: 120px;
 	}
 	.promotion{
-		margin-top: -30px;
+		margin-top: -50px;
+	}
+	.contacts__questions-link img{
+		display: none;
 	}
 }
