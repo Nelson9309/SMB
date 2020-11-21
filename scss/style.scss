@@ -1777,7 +1777,7 @@
 	}
 }
 .product{
-	margin-top: -300px;
+	margin-top: -265px;
 	padding-bottom: 100px;
 	&__inner{
 		display: flex;
@@ -1794,7 +1794,7 @@
 		}
 	}
 	&-header{
-		padding-bottom: 300px;
+		padding-bottom: 265px;
 	}
 	.product-wrapper1,
 	.product-wrapper2{
@@ -2412,7 +2412,6 @@
 			color: #000000;
 		}
 		img{
-			margin: 25px 0;
 			width: 100%;
 			display: block;
 		}
@@ -2493,10 +2492,11 @@
 		border-radius: 5px;
 		display: flex;
 		align-items: flex-start;
-		margin: 25px 0;
 		img{
 			margin-right: 20px;
 			display: block;
+			max-width: 50px;
+			max-height: 50px;
 		}
 	}
 	&__main-quote-text{

@@ -40,7 +40,7 @@ $(function(){
 	});
 	$('.header-dropdown__item-categorytitle').on('click', function(){
 		$(this).toggleClass('active');
-		$(this).siblings().slideToggle();
+		$(this).parent().siblings().slideToggle();
 	});
 	$('.header__menu-res').on('click', function(){
 		$(this).toggleClass('active');
