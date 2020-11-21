@@ -1359,7 +1359,6 @@
 		let sliders = document.querySelectorAll('.swiper-container');
 		sliders.forEach((el) => {
 			var swiper = new Swiper(el, {
-				autoplay: true,
 				loop: true,
 				pagination: {
 					el: '.swiper-pagination',
@@ -1368,22 +1367,27 @@
 				breakpoints: {
 					320: {
 						slidesPerView: 'auto',
+						autoplay: true,
 						spaceBetween: 10,
 					},
 					500: {
 						slidesPerView: 1,
+						autoplay: true,
 						spaceBetween: 20,
 					},
 					600: {
+						autoplay: true,
 						slidesPerView: 2,
 						spaceBetween: 20,
 					},
 					700: {
 						slidesPerView: 2,
+						autoplay: true,
 						spaceBetween: 40,
 					},
 					981: {
 						slidesPerView: 3,
+						autoplay: false,
 						spaceBetween: 20,
 						allowTouchMove: false,
 						simulateTouch: false,
