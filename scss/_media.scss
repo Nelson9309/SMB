@@ -1153,6 +1153,9 @@
 	}
 }
 @media (max-width: 800px){
+	.pr-support{
+		background-color: #F1F9FF;
+	}
 	.article__main-quote{
 		margin: 25px 0 30px;
 	}
@@ -2055,6 +2058,9 @@
 	}
 	.answers{
 		padding-bottom: 10px;
+		&-m{
+			padding-bottom: 100px;
+		}
 	}
 	.contacts{
 		padding-bottom: 45px;
