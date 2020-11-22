@@ -2888,7 +2888,16 @@
 	top: auto;
 	bottom: 0;
 }
-
+.pr-description{
+	margin-top: 40px;
+	p+p{
+		margin-top: 20px;
+	}
+	&:empty{
+		margin: 0;
+		display: none;
+	}
+}
 
 
 
