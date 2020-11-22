@@ -84,10 +84,8 @@
 		font-size: 14px;
 	}
 	.logo{
+		max-width: 175px;
 		padding: 12px 0;
-		img {
-			max-width: 175px;
-		}
 	}
 	.header, .footer{
 		.social__item img{
@@ -462,7 +460,7 @@
 		max-width: 50%;
 	}
 	.header-dropdown{
-		padding: 90px 15px 0 15px;
+		padding: 90px 15px 15px 15px;
 		.header__search,
 		.social,
 		.header__communication,
@@ -472,6 +470,8 @@
 		.header__search-input{
 			width: 100%;
 			padding: 20px 10px;
+		}
+		.header__search{
 			margin-bottom: 20px;
 		}
 		.header-dropdown__items{
@@ -497,6 +497,9 @@
 		}
 		.header-dropdown__mobile{
 			text-align: center;
+			.social{
+				margin-top: 20px;
+			}
 		}
 		.header__menu-link{
 			display: block;
@@ -634,8 +637,11 @@
 			}
 		}
 	}
-	.logo img{
+	.logo{
 		max-width: 225px;
+		img, svg{
+			max-width: 100%;
+		}
 	}
 	.advantages{
 		background: linear-gradient(360deg, transparent, #F1F9FF 100%);
@@ -1147,6 +1153,9 @@
 	}
 }
 @media (max-width: 800px){
+	.article__main-quote{
+		margin: 25px 0 30px;
+	}
 	.header__main-top{
 		flex-direction: column;
 		align-items: flex-start;
@@ -1727,8 +1736,23 @@
 	.head-support{
 		padding-bottom: 100px;
 	}
+	.article__main-wrap iframe {
+		height: 270px;
+		padding-left: 20px;
+		width: 100%;
+	}
 }
 @media (max-width: 500px){
+	.article__main-quote{
+		align-items: flex-start;
+		padding: 10px;
+		img{
+			max-height: 30px;
+			margin: 0;
+			margin-right: 15px;
+			max-width: 30px;
+		}
+	}
 	.header-support__item img {
 		max-width: 28px;
 		margin-right: 10px;
@@ -1793,7 +1817,7 @@
 		font-size: 16px;
 		line-height: 21px;
 	}
-	.logo img{
+	.logo {
 		max-width: 150px;
 	}
 	.header__calltel{
@@ -1858,8 +1882,12 @@
 	.pricelist-subblock{
 		padding: 20px 14px;
 	}
+	.pricelist-subblock__btns{
+		display: flex;
+		align-items: center;
+	}
 	.pricelist-subblock__btn{
-		padding: 7px 29px;
+		padding: 7px 19px;
 		font-size: 15px;
 		line-height: 20px;
 		margin-right: 10px;
@@ -2031,8 +2059,12 @@
 	.contacts{
 		padding-bottom: 45px;
 	}
-	.support-question{
-		padding-bottom: 0;
+	.question-b{
+		background-size: 195%;
+		background-position: left bottom -160px;
+	}
+	.footer-b{
+		background-color: #0F91E3;
 	}
 	.answers-article{
 		padding-top: 0;
@@ -2041,8 +2073,20 @@
 	.article__main-bottom{
 		max-width: 100%;
 	}
+	.article__main-wrap iframe {
+		height: 220px;
+		padding: 0;
+		width: 100%;
+	}
 }
 @media (max-width: 400px){
+	.footer__bottom-copyright{
+		text-align: center;
+		max-width: 280px;
+	}
+	.advantages__item::before{
+		bottom: 10px;
+	}
 	.answers-article{
 		padding-top: 0;
 		margin-top: -80px;
@@ -2050,6 +2094,10 @@
 	.question{
 		background-position: left bottom;
 		background-size: 223%;
+	}
+	.question-b{
+		background-size: 288%;
+		background-position: left bottom -120px;
 	}
 	.maintenance,
 	.product-likes{
@@ -2138,5 +2186,10 @@
 	}
 	.contacts__questions-link img{
 		display: none;
+	}
+	.article__main-wrap iframe {
+		height: 170px;
+		padding: 0;
+		width: 100%;
 	}
 }

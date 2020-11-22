@@ -177,6 +177,9 @@
 			border: none;
 		}
 	}
+	.main-slider .swiper-wrapper{
+		align-items: flex-end;
+	}
 	&__main-text{
 		padding-top: 20px;
 		border-top: 1px solid #7DD1FC;
@@ -485,7 +488,7 @@
 		align-items: flex-start;
 	}
 	&__info{
-		max-width: 560px;
+		max-width: 580px;
 		width: 100%;
 	}
 	&__infoimg{
@@ -506,6 +509,18 @@
 		max-width: calc(50% - 30px);
 		width: 100%;
 		margin-top: 35px;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: 18px;
+			left: -10px;
+			width: 50px;
+			height: 50px;
+			background-image: url(../images/transition-mini.svg);
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
 		&:nth-child(-n + 2){
 			margin-top: 0;
 		}
@@ -1598,7 +1613,7 @@
 		justify-content: center;
 		align-items: center;
 		color: #0F91E3;
-					background-color: #EFF7FD;
+		background-color: #EFF7FD;
 		text-align: center;
 		padding: 20px 65px;
 		border-radius: 5px 5px 0px 0px;
@@ -2198,6 +2213,9 @@
 		align-items: flex-start;
 		justify-content: space-between;
 	}
+	&__aside{
+		font-family: 'Nunito', sans-serif;
+	}
 	&__aside-top{
 		pointer-events: none;
 		img{
@@ -2291,7 +2309,6 @@
 	background-position: 85px 270px;
 	.answers__head{
 		margin-top: -300px;
-
 		/*220*/
 	}
 
@@ -2400,6 +2417,7 @@
 		img{
 			width: 100%;
 			display: block;
+			margin: 25px 0;
 		}
 		iframe{
 			width: 100%;
@@ -2476,6 +2494,7 @@
 		padding: 30px;
 		background-color: #EFF7FD;
 		border-radius: 5px;
+		margin: 25px 40px;
 		display: flex;
 		align-items: flex-start;
 		img{

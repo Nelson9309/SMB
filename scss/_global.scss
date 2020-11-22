@@ -64,13 +64,24 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 .logo{
-	display: block;
+	display: inline-block;
 	line-height: 0;
 	padding: 25px 0 20px;
 	img{
 		max-width: 211px;
 		width: 100%;
 	}
+	&__smb{
+		fill: white;
+		transition: all .3s ease-in-out .15s;
+		&.active{
+			fill: #43A7DB;
+		}
+		&.active2{
+			fill: #43A7DB;
+		}
+	}
+
 }
 .social__item{
 	line-height: 0;
